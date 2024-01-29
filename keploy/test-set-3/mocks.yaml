@@ -1,0 +1,48 @@
+version: api.keploy.io/v1beta1
+kind: Http
+name: mock-0
+spec:
+    metadata:
+        name: Http
+        operation: GET
+        type: HTTP_CLIENT
+    req:
+        method: GET
+        proto_major: 1
+        proto_minor: 1
+        url: /fact
+        header:
+            Accept-Encoding: gzip
+            User-Agent: Go-http-client/1.1
+        body: ""
+        body_type: ""
+        timestamp: 0001-01-01T00:00:00Z
+        host: catfact.ninja
+    resp:
+        status_code: 200
+        header:
+            Access-Control-Allow-Origin: '*'
+            Cache-Control: no-cache, private
+            Connection: keep-alive
+            Content-Encoding: gzip
+            Content-Length: "113"
+            Content-Type: application/json
+            Date: Tue, 23 Jan 2024 10:00:48 GMT
+            Server: nginx
+            Set-Cookie: XSRF-TOKEN=eyJpdiI6ImhlSjQ1YTUzNC93Z2prVnh5aUFkN0E9PSIsInZhbHVlIjoiQWxVbi81eENMWFBaVzZnY1A5VytIWGtiWTR6L0M2UnE0OWpNWmMxYjk3S1JuZmZPVlBuQVprbWRQK2hTSVFBVDV0TXh1ZWgwNEV5L1lmOU51NFBnd05vVHZhTGNyVmhyWHhWNHgvdk9LZkh2dUJ1b1IzbjFzeHcyTkgrTHBweGIiLCJtYWMiOiJjNjgxODBhZTYxYTQ2MzE2NzJhNTk0MjgxOWJjMjNjMzc5NmFjNDdjMmU0YTU1ZmI2ZjQyNTEyZDRiYTI0ZDlkIiwidGFnIjoiIn0%3D; expires=Tue, 23-Jan-2024 12:00:48 GMT; path=/; samesite=lax,catfacts_session=eyJpdiI6Ik1ydVI4dTRRQ0hFTUdVZG5qeENYWlE9PSIsInZhbHVlIjoiZ1VYcHI3b3A0eDZnd2JIUytTWldHKzZaUFFiM3U1N2FUc2VENUJpaTFEaXdUMndRMkF6a2d2QkpZTmRkUk1KZVVTakk1c0dXYTZQVTVxbXJNakdrL1ZoaWduNkZpanp2T2MxUFFGVXdtNnpFcVo0R0g5QS9FUGlWWWl3cmZlcmMiLCJtYWMiOiI5N2ZiOWFmM2IwYzZjMTRjMDllYzQyYmQ0ZjU4Y2E2ZDNhZDY3MzRiN2IyOGNjNmU5NTNjN2ViYTVjOGM5MDRjIiwidGFnIjoiIn0%3D; expires=Tue, 23-Jan-2024 12:00:48 GMT; path=/; httponly; samesite=lax
+            Vary: Accept-Encoding
+            X-Content-Type-Options: nosniff
+            X-Frame-Options: SAMEORIGIN
+            X-Ratelimit-Limit: "100"
+            X-Ratelimit-Remaining: "99"
+            X-Xss-Protection: 1; mode=block
+        body: '{"fact":"If your cat snores, or rolls over on his back to expose his belly, it means he trusts you.","length":90}'
+        body_type: ""
+        status_message: ""
+        proto_major: 0
+        proto_minor: 0
+        timestamp: 0001-01-01T00:00:00Z
+    objects: []
+    created: 1706004047
+    reqTimestampMock: 2024-01-23T15:30:45.386778163+05:30
+    resTimestampMock: 2024-01-23T15:30:47.325399539+05:30

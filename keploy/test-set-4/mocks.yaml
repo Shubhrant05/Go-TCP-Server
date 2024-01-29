@@ -1,0 +1,48 @@
+version: api.keploy.io/v1beta1
+kind: Http
+name: mock-0
+spec:
+    metadata:
+        name: Http
+        operation: GET
+        type: HTTP_CLIENT
+    req:
+        method: GET
+        proto_major: 1
+        proto_minor: 1
+        url: /fact
+        header:
+            Accept-Encoding: gzip
+            User-Agent: Go-http-client/1.1
+        body: ""
+        body_type: ""
+        timestamp: 0001-01-01T00:00:00Z
+        host: catfact.ninja
+    resp:
+        status_code: 200
+        header:
+            Access-Control-Allow-Origin: '*'
+            Cache-Control: no-cache, private
+            Connection: keep-alive
+            Content-Encoding: gzip
+            Content-Length: "100"
+            Content-Type: application/json
+            Date: Thu, 25 Jan 2024 06:13:37 GMT
+            Server: nginx
+            Set-Cookie: XSRF-TOKEN=eyJpdiI6InJxMGdlZFh4QjJNa0k4V1NmamlHaHc9PSIsInZhbHVlIjoiY3hVaURXMEhDYnB5TEthYTV4ZDJOa3ZjeTB5UGMvbWpxbmNDTUFlbnFjb2p1N1Z5ZDFUbk1LV2dDL0dSRFArV2tYdU5ETGR5cktCcnJvS3Q3NGRva3hScXBOdWdUeTJwUmd0SUpwWVVkNFpPTjFoWDVyU2pQRlkrNTYrMUlyN3YiLCJtYWMiOiJhNDllOTI0YzVmM2ZhMDYwYjQ2MjBiZGFkNzY3MTIwYzk4YjNmMDJhMTM1MDI3NTc3MjcxZDc0YjBlMTVlMzZkIiwidGFnIjoiIn0%3D; expires=Thu, 25-Jan-2024 08:13:37 GMT; path=/; samesite=lax,catfacts_session=eyJpdiI6IjgvYURaQTdtZHMrSElZT0QrT2xsWnc9PSIsInZhbHVlIjoiNjJTOGF1Tk1oU0pBczZ0UU9rbGdQMHI5UHBhTHFkOFRua0FQTUh6VjZtOXBXVXdtYW9tUFc1YUx1WXQ1V0RDTDNJeVlYQlh5VjdLZlRDTkxlQ2hYN1o5RHgwaHMyTGF0czA4MGt5aFZGcjZVeklNTTlETndOYWFtWGt6cy9kTVEiLCJtYWMiOiJiMTliN2JjYzQ1NDliNTExNzkzODVjNTBlODlhMjkwMWE0MGQ2ZDlmZDExYzA3NGI1NDhiMGE4ZmM1ODJkM2NiIiwidGFnIjoiIn0%3D; expires=Thu, 25-Jan-2024 08:13:37 GMT; path=/; httponly; samesite=lax
+            Vary: Accept-Encoding
+            X-Content-Type-Options: nosniff
+            X-Frame-Options: SAMEORIGIN
+            X-Ratelimit-Limit: "100"
+            X-Ratelimit-Remaining: "99"
+            X-Xss-Protection: 1; mode=block
+        body: '{"fact":"Ginger tabby cats can have freckles around their mouths and on their eyelids!","length":77}'
+        body_type: ""
+        status_message: ""
+        proto_major: 0
+        proto_minor: 0
+        timestamp: 0001-01-01T00:00:00Z
+    objects: []
+    created: 1706163217
+    reqTimestampMock: 2024-01-25T11:43:37.446999147+05:30
+    resTimestampMock: 2024-01-25T11:43:37.728871933+05:30

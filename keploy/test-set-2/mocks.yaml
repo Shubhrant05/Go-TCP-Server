@@ -1,0 +1,48 @@
+version: api.keploy.io/v1beta1
+kind: Http
+name: mock-0
+spec:
+    metadata:
+        name: Http
+        operation: GET
+        type: HTTP_CLIENT
+    req:
+        method: GET
+        proto_major: 1
+        proto_minor: 1
+        url: /fact
+        header:
+            Accept-Encoding: gzip
+            User-Agent: Go-http-client/1.1
+        body: ""
+        body_type: ""
+        timestamp: 0001-01-01T00:00:00Z
+        host: catfact.ninja
+    resp:
+        status_code: 200
+        header:
+            Access-Control-Allow-Origin: '*'
+            Cache-Control: no-cache, private
+            Connection: keep-alive
+            Content-Encoding: gzip
+            Content-Length: "97"
+            Content-Type: application/json
+            Date: Tue, 23 Jan 2024 09:32:26 GMT
+            Server: nginx
+            Set-Cookie: XSRF-TOKEN=eyJpdiI6ImJ2bWVKcHRBMWZBZjVESGY3TERkQ0E9PSIsInZhbHVlIjoiWFg1SlhuODBHOWo5cmVOUzQ3YmVGR1l5ZHNYdjhIOGp3d2tUWWZIaWlJTXFlbnBaVDJXajZTNkFPOG5jMm5mU2loamlUblpSbGlrWGdFVFlBY0J3M2wxK2RBNmd0UmV2T1p6RUpWSktTTllndHBrZkI1cGJTSE43YlVSWmZQNUciLCJtYWMiOiIwYjU3MjQ0MzAxYjEyNjJjM2E5OGE5ODIzMzk2OTlhYmEyMTc5OTM5MTlkODBmNDY1NTlhZTU1ZTM2ZWFiZDVjIiwidGFnIjoiIn0%3D; expires=Tue, 23-Jan-2024 11:32:26 GMT; path=/; samesite=lax,catfacts_session=eyJpdiI6InZ4Nis1RU9uenhPb2tRcjJrVGE3c2c9PSIsInZhbHVlIjoia0F0MG5LcGtKbE9wbE43M3BZWjFrNDRuU0ZvM1JwQVMxT3BIZVplWTdPSmcrejhXc0MwV3MwVStld0dQSlh5Qm41V0poZHA0elVRRnprNUROM2kvTlFIV0hCQ3FRaXBnQjRKODlRNnFCZlh4aUU1OHdKQ0x2L2svdTFDQkxhenYiLCJtYWMiOiIxNmQwZTE3ZTFiYjc4NjBiNmI4ZDRiNWI3YmNjMGYyMDJjYzVjOGM4YjNjMTM1Nzc1ZWMzZTA5ZjAwZWUxZDhjIiwidGFnIjoiIn0%3D; expires=Tue, 23-Jan-2024 11:32:26 GMT; path=/; httponly; samesite=lax
+            Vary: Accept-Encoding
+            X-Content-Type-Options: nosniff
+            X-Frame-Options: SAMEORIGIN
+            X-Ratelimit-Limit: "100"
+            X-Ratelimit-Remaining: "99"
+            X-Xss-Protection: 1; mode=block
+        body: '{"fact":"Julius Ceasar, Henri II, Charles XI, and Napoleon were all afraid of cats.","length":74}'
+        body_type: ""
+        status_message: ""
+        proto_major: 0
+        proto_minor: 0
+        timestamp: 0001-01-01T00:00:00Z
+    objects: []
+    created: 1706002345
+    reqTimestampMock: 2024-01-23T15:02:24.867738648+05:30
+    resTimestampMock: 2024-01-23T15:02:25.153550057+05:30
